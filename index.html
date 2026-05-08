@@ -80,6 +80,50 @@ tr:hover td{background:#c8e4f4}
 .zona-col{display:flex;flex-direction:column;align-items:center;gap:3px}
 .zona-lbl{font-size:15px;font-weight:700}
 .overflow{overflow-x:auto}
+
+/* ── RESPONSIVE MÓVIL ─────────────────────────────── */
+@media(max-width:600px){
+  body{padding:.5rem}
+  .planilla-header{padding:10px 12px;gap:8px}
+  .planilla-header img{width:54px!important;height:54px!important}
+  .logo-fbi-cap{width:60px!important;height:54px!important}
+  .header-title{font-size:16px}
+  .header-sub{font-size:12px}
+  .header-fecha{font-size:11px}
+  .tabs-wrap{padding:0 4px;overflow-x:auto}
+  .tab{padding:8px 10px;font-size:11px;letter-spacing:0;white-space:nowrap}
+  .card{padding:.75rem .9rem}
+  .card-title{font-size:12px}
+  .row{flex-direction:column;gap:8px}
+  .field{min-width:unset}
+  input,select{font-size:16px}
+  .btn{padding:10px 14px;font-size:13px}
+  .btn-primary{width:100%}
+  .btn-sm{padding:6px 10px;font-size:12px}
+  table{font-size:12px}
+  th{padding:5px 5px;font-size:10px}
+  td{padding:5px 5px}
+  .zi{width:42px;font-size:13px}
+  .zona-lbl{font-size:14px}
+  .serie-block{padding:8px 10px}
+  .serie-head{flex-direction:column;align-items:flex-start;gap:4px}
+  .tirador-header{flex-direction:column}
+  .tirador-header > div:last-child{flex-direction:row;gap:24px}
+  .podio-card{min-width:100px}
+  .metric-grid{grid-template-columns:repeat(2,1fr)}
+  #btn-exportar{width:100%;font-size:13px;padding:12px}
+  .planilla-header{flex-wrap:nowrap}
+  /* Config bar */
+  [style*="background:#ddeeff"]{flex-direction:column;gap:8px}
+  /* Selector tirador */
+  #selector-tirador .card{padding:8px 10px}
+}
+
+@media(max-width:400px){
+  .planilla-header img{width:44px!important;height:44px!important}
+  .header-title{font-size:14px}
+  .tab{padding:7px 8px;font-size:10px}
+}
 .sep-line{height:2px;background:var(--azul-claro);margin:1.5rem 0}
 .podio-card{flex:1;min-width:140px;border-radius:4px;padding:14px 12px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center}
 .podio-1{background:#fffbea;border:2px solid #d4a800}
